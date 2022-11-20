@@ -1,0 +1,152 @@
+DATA TYPE
+All variables use data-type during declaration to restrict the type of data to be stored. Therefore, we can say that data types are used to tell the variables the type of data it can store. Whenever a variable is defined in C++
+Yhe compiler allocates some memory for that variable based on the data type with which it is declared. Every data type requires a different amount of memory.
+C++ supports a wide variety of data types and the programmer can select the data type appropriate to the needs of the application. Data types specify the size and types of value to be stored.
+However, storage representation and machine instructions to manipulate each data type differ from machine to machine, although C++ instructions are identical on all machines.
+C++ supports the following data types:
+1.Primary or Built in or Fundamental data type
+2.Derived data types
+3.User defined data types
+
+1. Primitive Data Types: These data types are built-in or predefined data types and can be used directly by the user to declare variables. example: int, char, float, bool, etc. Primitive data types available in C++ are: 
+Integer
+Character
+Boolean
+Floating Point
+Double Floating Point
+Valueless or Void
+Wide Character
+
+2. Derived Data Types: The data types that are derived from the primitive or built-in datatypes are referred to as Derived Data Types. These can be of four types namely: 
+Function
+Array
+Pointer
+ReferencE
+
+3. Abstract or User-Defined Data Types: These data types are defined by the user itself. Like, as defining a class in C++ or a structure. C++ provides the following user-defined datatypes: 
+Class
+Structure
+Union
+Enumeration
+Typedef defined Datatype
+
+DATA TYPE OPERATORS
+The Operator data type is any expression that is parsed and returns a value, such as tod(), gui(), rtecall(), = (comparison). An operator is a special symbol or function commonly used in expressions. HPE Service Manager uses several different operators:
+arithmetic operators
+logical operators
+relational operators
+special operators
+string operators
+
+Arithmetic	Addition	+	
+Indicates that two numbers are to be added together.
+Example:
+49 + 51 = 100
+
+Arithmetic	Subtraction	-	
+Indicates that one number is to be subtracted from another number. To distinguish subtraction from a minus sign, the subtraction operator must be followed by a space.
+Example:
+40 - 20 = 20
+
+Arithmetic	Multiplication	*	
+Indicates that one number is to be multiplied by another number.
+Example:
+5 * 5 = 25
+
+Arithmetic	Division	/	
+Indicates that one number is to be divided by another number.
+Example:
+300 / 10 = 30
+
+Arithmetic	Exponentiation	**	
+Indicates that the exponential value of a number is to be calculated.
+Example:
+2 **5 = 32
+
+Arithmetic	Modulus	mod or %	
+The modulus is the remainder of a division operation. You may specifically want the remainder for a division operation, or you may want to generate a circular number sequence within a given range.
+Example:
+5 mod 2 = 1 or 5 % 2 = 1
+
+String	Concatenate	+	
+Indicates that two strings or two arrays are to be combined (concatenated) into a single string.
+Example:
+"a" + "b" = "ab"
+{"a", "b", "c",} + {"d", "e"} = {"a", "b", "c", "d", "e"}
+
+Logical	not	!	
+Inverts the Boolean value of the Boolean expression. If the expression is true, the system returns FALSE. If the expression is false, the system returns TRUE.
+Example:
+not TRUE = FALSE
+~ FALSE = TRUE (UNIX only)
+UNKNOWN = UNKNOWN
+~ UNKNOWN = UNKNOWN
+
+Logical	and	AND and &	
+Evaluates two expressions and returns a value of TRUE if both expressions are true. If one or both of the expressions is false, the system returns FALSE.
+Example:
+TRUE and TRUE = TRUE
+TRUE and FALSE = FALSE
+TRUE and UNKNOWN = UNKNOWN
+FALSE and UNKNOWN = FALSE
+
+Logical	or	OR or |	
+Evaluates two expressions and returns a TRUE if either or both of the expressions is true. If both expressions are false, it returns a FALSE.
+Example:
+TRUE or FALSE = TRUE
+FALSE | FALSE = FALSE
+FALSE OR UNKNOWN = UNKNOWN
+TRUE OR UNKNOWN = TRUE
+
+Relational	Less Than	<	
+Indicates that the value of one item is less than the value of another item.
+Example:
+400 < 500 is TRUE
+Relational	Less Than or Equal To	<= or =<	
+
+Indicates that the value of one item is less than or equal to the value of another item.
+Example:
+400 < = 500 is TRUE
+400 = < 500 is TRUE
+Relational	Equal To	=
+
+Indicates that the value of one item is equal to the value of another item.
+Example:
+1 = 1 is TRUE
+
+Relational	Greater than	>	
+Indicates that the value of one item is greater than the value of another item.
+Example:
+'08/01/83 00:00' > '07/20/83 00:00' is TRUE
+
+Relational	Greater Than or Equal To	>= or =>	
+Indicates that the value of one item is greater than or equal to the value of another item.
+Example:
+600> =300 is TRUE
+600= >300 is TRUE
+
+Relational	Not Equal To	(¬ =) or (~=) or (<>) or (><)	Indicates that the value of one item is not equal to the value of another item.
+Example:
+1 ~=2 is TRUE (UNIX only)
+
+Relational	Starts With (Truncated Equals)	#	
+Indicates that the value of the first string starts with the value of the second string. The order of the operands affects this operation.
+Example:
+"abc"#"ab" is TRUE
+
+Relational	Does Not Start With (Truncated Not Equal To)	¬# or ~#	
+Indicates that the value of the first string does not start with the value of the second string. The order of the operands affects this operation.
+Example:
+"ab" ~ #"abc" is TRUE (UNIX only)
+
+Special	Statement Separation	;	
+This operator separates two or more statements on the same line.
+Example:
+$A=$B+$C;$B=$C+$D
+
+Special	Parentheses	()	
+This operator groups together expressions or statements. Service Manager follows the standard order of operations: operators inside the parentheses are evaluated first. Parentheses themselves are evaluated from left to right.
+Example:
+3*($x + $y)
+IF ($x=1) THEN ($y="z") ELSE ($y=3)
+IF ($x=1) THEN ($x=2;$z=1) ELSE ($y=3)
